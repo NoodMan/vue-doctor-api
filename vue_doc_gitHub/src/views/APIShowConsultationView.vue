@@ -1,13 +1,18 @@
 <template>
-  <div>
-    <div class="card" style="width: 18rem">
-      <img src="..." class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title">{{ consultation.doctor_name }}</h5>
-        <p class="card-text">date : {{ consultation.date }}</p>
+  <center>
+    <br />
+    <h1> The Consultations </h1>
+    <br>
+    <div>
+      <div class="card" style="width: 20rem">
+        <!-- <img src="..." class="card-img-top" alt="..." /> -->
+        <div class="card-body">
+          <h5 class="card-title">{{ consultation.doctor_name }}</h5>
+          <p class="card-text">Date : {{ consultation.date }}</p>
+        </div>
       </div>
     </div>
-  </div>
+  </center>
 </template>
 
 <script setup>
@@ -26,3 +31,10 @@ onMounted(() => {
   );
 });
 </script>
+
+<style scoped>
+
+.card {
+  background-color: rgb(171, 110, 228);
+}
+</style>

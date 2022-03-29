@@ -16,8 +16,12 @@
 
       <nav>
          
-        <RouterLink to="/login">Login</RouterLink>
-        <RouterLink to="/consultations">Consultation</RouterLink>
+        <RouterLink to="/login"><span class="material-icons">
+login
+</span> Login</RouterLink>
+        <RouterLink to="/consultations"><span class="material-icons">
+person_search
+</span> Consultation</RouterLink>
      
       </nav>
     </div>
@@ -26,7 +30,7 @@
   <RouterView />
 </template>
 
-<style>
+<style scoped>
 @import "@/assets/base.css";
 
 #app {
@@ -34,12 +38,18 @@
   margin: 0 auto;
   padding: 2rem;
 
+  background-color: black;
   font-weight: normal;
+}
+
+body {
+  background-color: black;
 }
 
 header {
   line-height: 1.5;
   max-height: 100vh;
+  text-align: center;
 }
 
 .logo {
@@ -50,7 +60,7 @@ header {
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: rgb(189, 0, 47);
   transition: 0.4s;
 }
 
@@ -62,7 +72,7 @@ a,
 
 nav {
   width: 100%;
-  font-size: 12px;
+  font-size: 20px;
   text-align: center;
   margin-top: 2rem;
 }

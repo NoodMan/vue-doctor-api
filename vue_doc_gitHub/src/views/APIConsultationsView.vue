@@ -1,18 +1,31 @@
 <template>
+ <center>
+   <br>
+   <h1>List of consultations </h1>
   <div v-for="consult in consultStore.consultations" :key="consult['@id']">
-    <div class="card" style="width: 18rem">
-      <img src="..." class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title">{{ consult.doctor_name }}</h5>
-        <p class="card-text">date : {{ consult.date }}</p>
+    <br>
+    <br>
+    <div class="card" style="width: 20rem">
+      <!-- <img src="..." class="card-img-top" alt="..." /> -->
+      <div class="body">
+        <br>
+        <h5 class="title">{{ consult.doctor_name }}</h5>
+      
+        <p class="text">Date : {{ consult.date }}</p>
         <router-link
           :to="{ name: 'show_consultation', params: { id: consult.id } }"
         >
-          <button class="btn btn-primary">Voir LA consultation</button>
+          <center>
+            <button class="btn btn-dark">
+              <span class="material-icons"> remove_red_eye </span>
+            </button>
+          </center>
+          <br>
         </router-link>
       </div>
     </div>
   </div>
+  </center>
 </template>
 
 <script setup lang="ts">
@@ -30,3 +43,14 @@ onMounted(() => {
   });
 });
 </script>
+
+<style scoped>
+button {
+  border-radius: 10px;
+  align-items: center;
+  border: 3px solid rgb(247, 29, 76);
+}
+.card {
+  background-color: blanchedalmond;
+}
+</style>

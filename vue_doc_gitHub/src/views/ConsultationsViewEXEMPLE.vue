@@ -1,4 +1,6 @@
+
 <template>
+<!-- on n'as utiliser apiConsultationView.vue -->
   <div v-for="consult in storedConsults" :key="consult['@id']">
     <div class="card" style="width: 18rem">
       <img src="..." class="card-img-top" alt="..." />

@@ -1,4 +1,5 @@
 <template>
+<!-- on n'as utiliser apishowConsultationView.vue -->
   <div>
     <div class="card" style="width: 18rem">
       <img src="..." class="card-img-top" alt="..." />
