@@ -14,13 +14,16 @@
       <HelloWorld msg="Oh! Putain! 👏🏻💪🏼" />
 
       <nav>
-        <RouterLink to="/login"
-          ><span class="material-icons"> login </span> Login</RouterLink
-        >
-        <RouterLink to="/consultations"
-          ><span class="material-icons"> person_search </span>
-          Consultation</RouterLink
-        >
+        <button class="btn btn-dark">
+          <RouterLink to="/login"
+            ><span class="material-icons"> login </span> Login</RouterLink>
+        </button>
+        <br />
+        <button class="btn btn-dark">
+          <RouterLink to="/consultations"
+            ><span class="material-icons"> person_search </span>
+            Consultation</RouterLink>
+        </button>
       </nav>
     </div>
   </header>
@@ -53,6 +56,15 @@ header {
 .logo {
   display: block;
   margin: 0 auto 2rem;
+}
+
+button {
+  border-radius: 10px;
+  padding-bottom : 10px;
+  border: 3px solid rgb(247, 29, 76);
+  display: contents;  /* pour que le bouton aparaisse ou non selon notre choix  */
+  
+
 }
 
 a,
@@ -125,7 +137,6 @@ nav a:first-of-type {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
   }
