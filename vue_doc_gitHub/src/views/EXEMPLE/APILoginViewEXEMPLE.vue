@@ -1,5 +1,5 @@
 <template>
-<!-- on n'as utiliser loginView.vue -->
+  <!-- on n'as utiliser loginView.vue -->
   <div class="bg-dark">
     <form @submit.prevent="handleSubmit" class="d-flex flex-column p-5 gap-2">
       <input

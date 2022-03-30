@@ -1,5 +1,4 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <header>
@@ -15,14 +14,13 @@
       <HelloWorld msg="Oh! Putain! 👏🏻💪🏼" />
 
       <nav>
-         
-        <RouterLink to="/login"><span class="material-icons">
-login
-</span> Login</RouterLink>
-        <RouterLink to="/consultations"><span class="material-icons">
-person_search
-</span> Consultation</RouterLink>
-     
+        <RouterLink to="/login"
+          ><span class="material-icons"> login </span> Login</RouterLink
+        >
+        <RouterLink to="/consultations"
+          ><span class="material-icons"> person_search </span>
+          Consultation</RouterLink
+        >
       </nav>
     </div>
   </header>

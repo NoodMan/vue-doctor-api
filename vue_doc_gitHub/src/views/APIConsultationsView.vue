@@ -1,30 +1,30 @@
 <template>
- <center>
-   <br>
-   <h1>List of consultations </h1>
-  <div v-for="consult in consultStore.consultations" :key="consult['@id']">
-    <br>
-    <br>
-    <div class="card" style="width: 20rem">
-      <!-- <img src="..." class="card-img-top" alt="..." /> -->
-      <div class="body">
-        <br>
-        <h5 class="title">{{ consult.doctor_name }}</h5>
-      
-        <p class="text">Date : {{ consult.date }}</p>
-        <router-link
-          :to="{ name: 'show_consultation', params: { id: consult.id } }"
-        >
-          <center>
-            <button class="btn btn-dark">
-              <span class="material-icons"> remove_red_eye </span>
-            </button>
-          </center>
-          <br>
-        </router-link>
+  <center>
+    <br />
+    <h1>List of consultations</h1>
+    <div v-for="consult in consultStore.consultations" :key="consult['@id']">
+      <br />
+      <br />
+      <div class="card" style="width: 20rem">
+        <!-- <img src="..." class="card-img-top" alt="..." /> -->
+        <div class="body">
+          <br />
+          <h5 class="title">{{ consult.doctor_name }}</h5>
+
+          <p class="text">Date : {{ consult.date }}</p>
+          <router-link
+            :to="{ name: 'show_consultation', params: { id: consult.id } }"
+          >
+            <center>
+              <button class="btn btn-dark">
+                <span class="material-icons"> remove_red_eye </span>
+              </button>
+            </center>
+            <br />
+          </router-link>
+        </div>
       </div>
     </div>
-  </div>
   </center>
 </template>
 

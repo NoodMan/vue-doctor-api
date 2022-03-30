@@ -1,5 +1,5 @@
 import type { User } from "../types/userType";
-
+// utiliser avec option api
 export default {
   methods: {
     async fetchLogin(user: User) {

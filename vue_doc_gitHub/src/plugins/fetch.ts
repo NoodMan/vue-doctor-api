@@ -1,5 +1,5 @@
 import type { User } from "../types/userType";
-
+// utilisable avec Api composition
 export default async function fetchLogin(user: User) {
   await fetch("https://apidoctor.quidam.re/api/login_check", {
     method: "POST",

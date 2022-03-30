@@ -2,45 +2,52 @@
   <div id="center">
     <form
       @submit.prevent="handleSubmit"
-      class="d-flex flex-column align-items-center">
-      <br/>
+      class="d-flex flex-column align-items-center"
+    >
+      <br />
       <div class="col-md-4">
         <h1>Login</h1>
-        <br>
-        <pre> 👋🏼 Please log in 
-     to see the consultations...</pre>
-     <br>
+        <br />
+        <pre>
+ 👋🏼 Please log in 
+     to see the consultations...</pre
+        >
+        <br />
 
         <label for="username" class="form-label">Username</label>
 
         <div class="input-group mb-3">
           <span class="input-group-text" id="basic-addon1">
-          <span class="material-icons">person</span></span>
+            <span class="material-icons">person</span></span
+          >
           <input
             type="text"
             class="form-control"
             placeholder="Enter your username..."
             v-model="user.username"
             id="username"
-            name="username"/>
+            name="username"
+          />
         </div>
 
         <label for="username" class="form-label">Password</label>
 
         <div class="input-group mb-3">
           <span class="input-group-text" id="basic-addon1">
-          <span class="material-icons"> password </span></span>
+            <span class="material-icons"> password </span></span
+          >
           <input
             type="password"
             class="form-control"
             placeholder="Enter your password..."
             v-model="user.password"
             id="password"
-            name="password"/>
+            name="password"
+          />
         </div>
-<br>
+        <br />
         <center>
-          <input type="submit" value="Login" name="valider" id="valider">
+          <input type="submit" value="Login" name="valider" id="valider" />
         </center>
       </div>
     </form>
@@ -104,5 +111,3 @@ p {
   font-size: 25px;
 }
 </style>
-
-

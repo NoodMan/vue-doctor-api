@@ -1,13 +1,16 @@
 <template>
   <center>
     <br />
-    <h1> The Consultations </h1>
-    <br>
+    <h1>The Consultations</h1>
+    <br />
     <div>
       <div class="card" style="width: 20rem">
         <!-- <img src="..." class="card-img-top" alt="..." /> -->
         <div class="card-body">
-          <h5 class="card-title">{{ consultation.doctor_name }}</h5>
+          <h5 class="card-title">
+            <span class="material-icons">medication</span>
+            {{ consultation.doctor_name }}
+          </h5>
           <p class="card-text">Date : {{ consultation.date }}</p>
         </div>
       </div>
@@ -33,7 +36,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-
 .card {
   background-color: rgb(171, 110, 228);
 }
